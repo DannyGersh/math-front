@@ -1,0 +1,3 @@
+[submodule "math-static"]
+	path = math-static
+	url = git@github.com:DannyGersh/math-static.git
