@@ -9,8 +9,7 @@
 		"storybook": "storybook dev -p 6006 -c ./main/frontend/storybook/.storybook",
 		"build-storybook": "storybook build",
 		"lint": "eslint . --cache --fix",
-		"pretest": "npm run lint",
-		"prettify": "npx prettier . --write"
+		"pretest": "npm run lint"
 	},
 	"author": "",
 	"license": "ISC",
@@ -59,7 +58,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-push": "npm run prettify"
+			"pre-push": "npx prettier . --write"
 		}
 	}
 }

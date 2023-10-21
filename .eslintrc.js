@@ -10,7 +10,7 @@ module.exports = {
 	rules: {
 		'import/prefer-default-export': 'off',
 		'no-tabs': 'off',
-		'indent': 'off',
+		indent: 'off',
 	},
 	env: {
 		browser: true,
