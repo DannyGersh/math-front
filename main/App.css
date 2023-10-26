@@ -1,3 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+  
+  
+  
+  
+  .backroundDiv {
+    background-image: url(./img/220416_00_2x.jpeg),linear-gradient(to right, rgba(0, 0, 0, 0.91),rgb(114, 100, 100),rgba(0, 0, 0, 0.836));
+    
+    background-blend-mode: multiply;
+  }
+  
+  .try1 {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 0 100px;
+    color: rgb(202, 208, 213);
+    background-image: url(./img/vecteezy_textured-crumpled-black-paper-background_6893584_325.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    box-shadow: 10px 8px 4px rgb(0 0 0 / 0.2);
+   
+    
+    
+    
+  }
+  
+  
+    ul {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding: 1rem;
+     justify-content: space-evenly;
+     row-gap: 20px;
+     
+  }
+  
+   
+    
+  
+  
+  li {
+    text-align: center;
+    color: rgb(202, 208, 213);
+    
+    background-image: url(img/Leonhard_Euler.jpeg),url(img/vecteezy_textured-crumpled-black-paper-background_6893584_325.jpg);
+    background-size: 60%,100%;
+    background-position: 0px -35px,center;
+    background-blend-mode:  lighten;
+    background-repeat: no-repeat;
+    
+   margin: 1rem;
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: 10px 8px 4px rgb(0 0 0 / 0.2);
+    
+  }

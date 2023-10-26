@@ -27,12 +27,20 @@ module.exports = {
             }, {
                 test: /\.css$/i,
                 include: path.resolve(dir_main),
+              
                 use: [
                     'style-loader',
                     'css-loader',
                     'postcss-loader'
                 ],
-            },
+            
+        },
+        
+        {
+            test: /\.(png|jpe?g|gif|svg)$/i,       // (1)
+            type: 'asset/resource',
+          },
+
         ]
     },
 };
