@@ -3,12 +3,14 @@ import React, {useState} from 'react';
 import Header from './Header';
 import Card from './Card';
 import NewCard from './NewCard';
+import { data } from 'autoprefixer';
 
 
-const DummyData= [{title: 'Crazy mathematicians', desc: 'mathematicians who lost it',},
+const DummyData= [
   {title: 'Godel', desc: 'mathematician who starved himself to death',},
        {title: 'Cantor', desc: 'mathematician who spent his life in a metal house',} ,
 ];
+const HeaderDummyData= [{title: 'Crazy mathematicians', desc: 'mathematicians who lost it',}];
 
 function App() {
   const [cardData, setData] = useState(DummyData);
@@ -16,20 +18,19 @@ function App() {
      setData((prevData) => {
       return [cardData, ...prevData];
      });
+     console.log(cardData);
 
   }
   return (
     <div className='backroundDiv'>
         
-        <Header title={DummyData[0].title} desc={DummyData[0].desc}/>
+        <Header title={HeaderDummyData[0].title} desc={HeaderDummyData[0].desc}/>
       
         <ul>
           
           <NewCard onAddCard={addCard}/>
-          {/*<Card title={cardData.title} not sure how to make a newcard with entetred data/>*/}
-          <Card title={DummyData[1].title} desc={DummyData[1].desc}/>
+          {cardData.map(function(data) {return (<Card title={data.title} desc={data.desc}/>)})}
           
-          <Card title={DummyData[2].title} desc={DummyData[2].desc}/>
          
         </ul>
      </div>
